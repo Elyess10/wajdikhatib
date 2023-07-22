@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactPlayer from "react-player";
 
-function App() {
+import "./styles.css";
+
+export default function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='player-wrapper'>
+            <ReactPlayer
+            className='react-player fixed-bottom'
+            url= 'videos/video.mp4'
+            width='100%'
+            height='100%'
+            controls = {true}
+            style={{
+              borderRadius: '50px',
+            }}
+            playing
+            />
+            {" "}{" "}{" "}Wajdi Khatib skills Video
+        </div>
     </div>
   );
 }
-
-export default App;

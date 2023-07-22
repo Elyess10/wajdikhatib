@@ -1,0 +1,26 @@
+* {
+background-color: black;
+color: white;
+font-family: 'Chilanka', cursive;
+font-size: 1rem;
+}
+.player-wrapper {
+width: 60%;
+margin: 5% auto;   
+  border-radius: 50px; /* Adjust the value as per your desired border radius */
+  overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 30px 90px;
+    text-align: center;
+
+  }
+.react-player {
+ height: 10%;
+  }
+
+
+  @media (max-width: 600px) {
+  .player-wrapper  {
+    width: 90%;
+    margin: 50% auto; 
+  }
+}
